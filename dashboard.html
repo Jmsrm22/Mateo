@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mateo - Acivity 1</title>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+   
+  </head>
+
+  <style>
+    span{
+        font-size:13px;
+    }
+
+  </style>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button"data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+        </button>
+        <a
+          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#"
+          >MATEO</a
+        >
+        <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavBar">
+          <form class="d-flex ms-auto my-3 my-lg-0">
+            <div class="input-group">
+              <input
+                class="form-control form-control-sm"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success btn-sm" type="submit" >
+                <i class="bi bi-search"></i>
+              </button>
+
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle ms-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    </nav>
+
+    <!-- Side Navbar -->
+    <div
+      class="offcanvas offcanvas-start sidebar-nav bg-dark"
+      tabindex="-1"
+      id="sidebar"
+    >
+      <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+          <ul class="navbar-nav">
+            <li>
+              <div class="text-muted small fw-bold text-uppercase px-2">
+                CORE
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-3 active">
+                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+            <li>
+              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                Interface
+              </div>
+            </li>
+            <li>
+              <a
+                class="nav-link px-3 sidebar-link"
+                data-bs-toggle="collapse"
+                href="#layouts"
+              >
+                <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                <span>Layouts</span>
+                <span class="ms-auto">
+                  <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                  </span>
+                </span>
+              </a>
+              <div class="collapse" id="layouts">
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link px-3">
+                      <span class="me-2"
+                        ><i class="bi bi-layout-split"></i
+                      ></span>
+                      <span>Nested Link</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+         
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+        <!--Card-->
+            
+        <main class="mt-5 pt-3"> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="bg-s">Dashboard</h4>
+                    </div>
+                </div>
+
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card bg-primary shadow text-white h-100">
+                <div class="card-header">Primary Card </div>
+                <div class="card-body py-5">
+                    <p>First Card</div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card bg-light shadow h-100">
+                <div class="card-header">Light Card </div>
+                <div class="card-body py-5"><p>Second Card</div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+
+                <div class="card bg-success shadow text-white h-100">
+                <div class="card-header">Success Card </div>
+                <div class="card-body py-5"> <p>Third Card</div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card bg-danger shadow text-white h-100">
+                <div class="card-header">Danger Card </div>
+                <div class="card-body py-5"> <p>Fourth Card</div>
+                </div>
+            </div>
+          
+        </div>
+
+        <!--Chart-->
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-header">
+                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                    Area Chart Example
+              </div>
+              <div class="card-body">
+                <canvas class="chart" width="400" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-header">
+                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                Area Chart Example
+              </div>
+              <div class="card-body">
+                <canvas class="chart" width="400" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--ROW FOR TABLE-->
+
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-header">
+                <span><i class="bi bi-table me-2"></i></span> Data Table
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="example"
+                    class="table table-striped data-table"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Alyas</th>
+                        <th>Section</th>
+                        <th>Age</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    <tr>
+                        <td>1</td>
+                        <td>BERSABE,RHAYCEE B</td>
+                        <td>Late po yan</td>
+                        <td>BSIT 3B</td>
+                        <td>34</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>DEL ROSARIO,CHARLES F</td>
+                        <td>Bastos</td>
+                        <td>BSIT 3B</td>
+                        <td>33</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>LABRADOR,JAKE ANGELO D</td>
+                        <td>Alalay ni Daniel</td>
+                        <td>BSIT 3B</td>
+                        <td>22</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>LEYSICO,ABRAHAM JEFFERSON D</td>
+                        <td>Madam Two</td>
+                        <td>BSIT 3B</td>
+                        <td>23</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>MICHAEL JOHN LIMON</td>
+                        <td>Mark Scabinger</td>
+                        <td>BSIT 3B</td>
+                        <td>1000 - Imortal</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>LLANTINO,JANE MARI P</td>
+                        <td>Press Sherly</td>
+                        <td>BSIT 3B</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>LOYOLA,LANA-ASHLEY</td>
+                        <td>Bruukin</td>
+                        <td>BSIT 3B</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>MATEO JAMES R</td>
+                        <td>Cute</td>
+                        <td>BSIT 3B</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>MOJICA,MARK JAMES C</td>
+                        <td>Dorm Next Door</td>
+                        <td>BSIT 3B</td>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>NACINO,JOHN LESTER L</td>
+                        <td>Short Hair</td>
+                        <td>BSIT 3B</td>
+                        <td>37</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>NAZARENO,MATT JEROME L</td>
+                        <td>Panganay ni Mamu</td>
+                        <td>BSIT 3B</td>
+                        <td>27</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>OCAMPO,ANGELYN T</td>
+                        <td>Tulog po siya</td>
+                        <td>BSIT 3B</td>
+                        <td>30</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>OGNES,GLAIZA A</td>
+                        <td>Madam Three</td>
+                        <td>BSIT 3B</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>ORGANO,ARON MAR D</td>
+                        <td>Madam One</td>
+                        <td>BSIT 3B</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>ORTIZ,APPLE C</td>
+                        <td>IOS</td>
+                        <td>BSIT 3B</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>PADILLA,ROVICK ANDREI B</td>
+                        <td>Daniel</td>
+                        <td>BSIT 3B</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>PANGANIBAN,JULES JEREMIEH F</td>
+                        <td>Hev Babi</td>
+                        <td>BSIT 3B</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>PIEDAD,ALAINA FAYE A</td>
+                        <td>Madam Four</td>
+                        <td>BSIT 3B</td>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>REAMICO,PAUL WHILZEL S</td>
+                        <td>Bunso ni Mamu</td>
+                        <td>BSIT 3B</td>
+                        <td>34</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>SARTE,ANDREI JAE MILBER D</td>
+                        <td>Madam Five</td>
+                        <td>BSIT 3B</td>
+                        <td>23</td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td>SECUYA,LYZA CYRIL J</td>
+                        <td>Si Ate</td>
+                        <td>BSIT 3B</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>SERNA,CRISTY PEARL R</td>
+                        <td>Cheer Up</td>
+                        <td>BSIT 3B</td>
+                        <td>50</td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+
+      </main>
+
+      <!--Script for Table-->
+      <script src="js/tablescript.js"></script>   
+          
+      
+</body>
+  </html>
+

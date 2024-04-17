@@ -1,0 +1,120 @@
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('img/Farm1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* For Login Admin */
+
+
+.imglogo{
+    width: auto; 
+    height: 40px;
+}
+
+.LoginRow{
+    width:45%;
+}
+
+.EmailLog span{
+    background-color: white;
+    border-right:0;
+}
+
+.EmailLog input{
+    background-color: white;
+    border-left:0;
+}
+
+.Password span{
+    background-color:white;
+    border-right: none; 
+}
+
+.Password input{
+    background-color:white;
+    border-left: none; 
+    border-right: none; 
+}
+
+.Password label{
+    background-color:white;
+}
+
+.inputLogLabels{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login input{
+    border-radius:0;
+    width:100%;
+    border:0;
+    padding:0.5em;
+    color:white;
+    background-color:#444444;
+    color:white;
+    border-radius:5px;} 
+
+.login input:hover {
+    background: #353630;
+    color: white;
+    border-color: #353630;}
+
+
+    .forgotpass a {
+        color:#737282; 
+        text-decoration: none; /* Remove default underline */
+        position: relative; /* Set position relative for pseudo-element */
+    }
+    
+    .forgotpass a::after {
+        content: ''; 
+        position: absolute; 
+        left: 0;
+        bottom: -2px; 
+        width: 100%; 
+        height: 1px; 
+        background-color:#a89796; 
+        transition: width 0.3s; 
+        visibility: hidden; 
+    }
+    
+    .forgotpass a:hover::after {
+        width: 100%; 
+        visibility: visible; 
+    }
+
+    .CreateAcc a{
+        color:#737282;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative; }
+
+    .CreateAcc a:hover {
+        color:#737282;
+        font-weight: 650;
+        text-decoration: none;
+        position: relative; }
+    
+    .LogHeader{
+        color:#444444;
+    }
+
+
+.Nunito-light {
+  font-family: "Merriweather", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
